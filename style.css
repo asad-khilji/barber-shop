@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+              url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1") center/cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+nav h1 {
+  color: #c59d5f;
+  font-size: 28px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #c59d5f;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8%;
+}
+
+.hero h2 {
+  font-size: 58px;
+  max-width: 600px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin: 15px 0 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #c59d5f;
+  color: #111;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #c59d5f;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1d1d1d;
+  padding: 30px;
+  width: 280px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card span {
+  display: block;
+  margin-top: 15px;
+  color: #c59d5f;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about {
+  background: #181818;
+}
+
+.about p,
+.contact p {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
